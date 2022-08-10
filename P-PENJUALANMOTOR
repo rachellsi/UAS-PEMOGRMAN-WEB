@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>UAS -Penjualan Motor</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+
+
+
+    <!-- Bootstrap CSS -->
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Favicons -->
+ <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.100rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 758px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+ <div class="container">
+  <div class="py-5 text-center">
+    <h2>Program Penjualan Motor</h2>
+   </div>
+
+  <div class="row">
+      <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">PROGRAM UAS</span>
+        <span class="badge badge-secondary badge-pill">7</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+                <a href="P-PENJUALANBARANG.html" class="nav-link text-success"><h6 class="my-0">Program Penjualan Barang</h6></a>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                  <a href="P-PENGGAJIANKARYAWAN.html" class="nav-link text-success"><h6 class="my-0">Program Penggajian Karyawan</h6></a>
+            </div>
+          </li>
+        
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                  <a href="P-PEMBELIANBARANG.html" class="nav-link text-success"><h6 class="my-0">Program Pembelian Barang</h6></a>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                  <a href="P-PEMBELIANBARANG(MEMBER)" class="nav-link text-success"><h6 class="my-0">Program Pembelian Barang(Member)</h6></a>
+            </div>
+          </li>
+        
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                  <a href="P-PENJUALANBARANGELEKTRONIK.html" class="nav-link text-success"><h6 class="my-0">Program Penjualan Barang Elektronik</h6></a>
+            </div>
+          </li>
+
+        
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                  <a href="P-PENJUALANMOTOR.html" class="nav-link text-success"><h6 class="my-0">Program Penjualan Motor</h6></a>
+            </div>
+          </li>
+          
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                  <a href="P-TAGIHANLISTRIK.html" class="nav-link text-success"><h6 class="my-0">Program Tagihan Listrik</h6></a>
+            </div>
+          </li>
+          
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                  <a href="P-KREDITRUMAH.html" class="nav-link text-success"><h6 class="my-0">Program Kredit Rumah</h6></a>
+            </div>
+          </li>
+      </ul>
+
+    </div>
+    <div class="col-md-8 order-md-1 card">
+        <div class="card-body">
+      <h4 class="mb-3">Form Penjualan Motor</h4>
+      <form class="needs-validation" name="form">
+        
+
+        <div class="mb-3">
+          <label >Merk Motor</label>
+          <select class="form-control" id="merk_motor">
+            <option>Pilih Motor</option>
+            <option value="Honda">Honda</option>
+            <option value="Yamaha">Yamaha</option>
+            <option value="Suzuki">Suzuki</option>
+          </select>
+        </div>
+
+        
+        <div class="mb-3">
+            <label class="col-md-4">Aksesoris :</label>
+            
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="velg_racing" value="Velg Racing" />
+              <label class="form-check-label" for="velg_racing">Velg Racing</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="helm" value="Helm" />
+              <label class="form-check-label" for="helm">Helm</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="jaket" value="Jaket" />
+              <label class="form-check-label" for="jaket">Jaket</label>
+            </div>
+
+        </div>
+
+        
+        <div class="mb-3">
+            <label class="col-md-4">Cara Pembayaran :</label>
+            <div class="form-check form-check-inline">
+                <div><input class="form-check-input" type="radio" id="tunai" name="radio" value="Tunai" /><label for="pilihanbayar 1">Tunai</label></div>
+            </div>
+            <div class="form-check form-check-inline">
+                <div><input class="form-check-input" type="radio" id="kredit" name="radio" value="Kredit" /><label for="pilihanbayar 2">Kredit</label></div>
+            </div>
+        </div>
+
+        <div class="row">
+        <div class="mb-1 col-md-5">
+
+        <table class="table table-hover table-primary">
+            <thead>
+              <tr>
+                <th scope="col">Merk Motor </th>
+                <th scope="col">Harga</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">Honda</td>
+                <td>15000000</td>
+              </tr>
+              <tr>
+                <td scope="row">Yamaha</td>
+                <td>14000000</td>
+              </tr>
+              <tr>
+                <td scope="row">Suzuki</td>
+                <td>13000000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mb-1 col-md-5">
+
+            <table class="table table-hover table-primary">
+                <thead>
+                  <tr>
+                    <th scope="col">Aksesoris </th>
+                    <th scope="col">Harga</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">Velg</td>
+                    <td>450000</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Helm</td>
+                    <td>250000</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Jaket</td>
+                    <td>300000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+        <hr class="mb-4">
+
+        <div class="mb-3">
+          
+            <a class="btn btn-success" onclick="proses()">Proses</a>
+            <a href="" class="btn btn-danger">Reset</a>
+          
+        </div>
+        <div class="mb-3">
+          <label >Harga</label>
+          <input type="text" class="form-control" required readonly id="harga_barang">
+          
+        </div>
+        
+        <div class="mb-3">
+          <label >Bunga/Diskon</label>
+          <input type="text" class="form-control" required readonly id="diskon">
+          
+        </div>
+        
+        <div class="mb-3">
+          <label >Total Bayar</label>
+          <input type="text" class="form-control" required readonly id="total_bayar">
+          
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+
+  
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; UAS Dennis Cesar Al Haffidz
+    </p>
+    
+  </footer>
+ </div>
+
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+      
+        <script src="js/form-validation.js"></script>
+        <script>
+          function proses(){
+            let merk_motor = document.getElementById("merk_motor").value;
+
+            let velg = document.getElementById("velg_racing");
+            let helm = document.getElementById("helm");
+            let jaket = document.getElementById("jaket");
+            let tunai = document.getElementById("tunai");
+            let kredit = document.getElementById("kredit");
+
+            let total_bayar = document.getElementById("total_bayar").value;
+
+            let honda = 15000000;
+            let yamaha = 14000000;
+            let suzuki = 13000000;
+            // Pilih merk_motor
+            switch (merk_motor) {
+                case "Honda":
+                merk_motor = honda;
+                document.getElementById("harga_barang").value = merk_motor;
+                break;
+                case "Yamaha":
+                merk_motor = yamaha;
+                document.getElementById("harga_barang").value = merk_motor;
+                break;
+                case "Suzuki":
+                merk_motor = suzuki;
+                document.getElementById("harga_barang").value = merk_motor;
+                break;
+
+                default:
+                // alert("Pilih Merk Motor Terlebih Dahulu!")
+                break;
+            }
+            // Pilih Aksesoris
+            if (velg.checked) {
+                let hargavelg = 450000 + merk_motor;
+
+                document.getElementById("harga_barang").value = hargavelg;
+            } else if (helm.checked) {
+                let hargahelm = 250000 + merk_motor;
+
+                document.getElementById("harga_barang").value = hargahelm;
+            } else if (jaket.checked) {
+                let hargajaket = 300000 + merk_motor;
+
+                document.getElementById("harga_barang").value = hargajaket;
+            } else {
+            }
+            // Hitung kondisi aksesoris
+            if (velg.checked && helm.checked && jaket.checked) {
+                let harga_barang = merk_motor + 450000 + 250000 + 300000;
+
+                document.getElementById("harga_barang").value = harga_barang;
+            } else if (velg.checked && helm.checked) {
+                let harga_barang = merk_motor + 450000 + 250000;
+
+                document.getElementById("harga_barang").value = harga_barang;
+            } else if (velg.checked && jaket.checked) {
+                let harga_barang = merk_motor + 450000 + 300000;
+
+                document.getElementById("harga_barang").value = harga_barang;
+            } else if (helm.checked && jaket.checked) {
+                let harga_barang = merk_motor + 250000 + 300000;
+
+                document.getElementById("harga_barang").value = harga_barang;
+            }
+
+            // Pembayaran
+            if (tunai.checked) {
+                let diskon = 0.1 * document.getElementById("harga_barang").value;
+
+                total_bayar = document.getElementById("harga_barang").value - diskon;
+                document.getElementById("total_bayar").value = total_bayar;
+
+                document.getElementById("diskon").value =diskon;
+            } else if (kredit.checked) {
+                let hasilharga = parseInt(document.getElementById("harga_barang").value);
+                diskon = 0.15;
+
+                let hitung = hasilharga * diskon;
+
+                total_bayar = hitung + hasilharga;
+
+                document.getElementById("total_bayar").value = total_bayar;
+
+                document.getElementById("diskon").value =diskon;
+            }
+          }
+        </script>
+  </body>
+ </html>
