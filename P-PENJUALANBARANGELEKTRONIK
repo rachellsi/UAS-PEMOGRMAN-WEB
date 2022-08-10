@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>UAS -Penjualan Barang Elektronik</title>
+
+    <link rel="canonical" href= "https:getbootstrap.com/docs/5.1/examples/checkout/">
+
+
+
+     <!-- Bootstrap CSS -->
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Favicons -->
+ <meta name="theme-color" content="#563d7c">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.100rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 758px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      } 
+    }
+  </style>
+
+
+
+     <!-- Custom styles for this template -->
+  <link href="css/form-validation.css" rel="stylesheet">
+ </head>
+ <body class="bg-light">
+  
+     <div class="container">
+      <div class="py-5 text-center">
+    <h2>Program Penjualan Barang Elektronik</h2>
+ </div>
+
+  <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+    <h4 class="d-flex justify-content-between align-items-center mb-3">
+      <span class="text-muted">PROGRAM UAS</span>
+      <span class="badge badge-secondary badge-pill">7</span>
+    </h4>
+    <ul class="list-group mb-3">
+      <li class="list-group-item d-flex justify-content-between lh-condensed">
+        <div>
+              <a href="P-PENJUALANBARANG.html" class="nav-link text-success"><h6 class="my-0">Program Penjualan Barang</h6></a>
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+                <a href="P-PENGGAJIANKARYAWAN.html" class="nav-link text-success"><h6 class="my-0">Program Penggajian Karyawan</h6></a>
+          </div>
+        </li>
+      
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+                <a href="P-PEMBELIANBARANG.html" class="nav-link text-success"><h6 class="my-0">Program Pembelian Barang</h6></a>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+                <a href="P-PEMBELIANBARANG(MEMBER).html" class="nav-link text-success"><h6 class="my-0">Program Pembelian Barang(Member)</h6></a>
+          </div>
+        </li>
+      
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+                <a href="P-PENJUALANBARANGELEKTRONIK.html" class="nav-link text-success"><h6 class="my-0">Program Penjualan Barang Elektronik</h6></a>
+          </div>
+        </li>
+
+      
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+                <a href="P-PENJUALANMOTOR.html" class="nav-link text-success"><h6 class="my-0">Program Penjualan Motor</h6></a>
+          </div>
+        </li>
+        
+      <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+                <a href="P-TAGIHANLISTRIK.html" class="nav-link text-success"><h6 class="my-0">Program Tagihan Listrik</h6></a>
+          </div>
+        </li>
+        
+      <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+                <a href="P-KREDITRUMAH.html" class="nav-link text-success"><h6 class="my-0">Program Kredit Rumah</h6></a>
+          </div>
+        </li>
+    </ul>
+
+  </div>
+  <div class="col-md-8 order-md-1 card">
+      <div class="card-body">
+    <h4 class="mb-3">Form Penjualan Barang Elektronik</h4>
+    <form class="needs-validation" name="form">
+      
+
+      <div class="mb-3">
+        <label >Nama Barang</label>
+        <input type="text" class="form-control"  placeholder="Laptop Asus" required name="nama_barang">
+      </div>
+
+      
+      <div class="mb-3">
+        <label >Harga</label>
+        <input type="text" class="form-control"  placeholder="1000000" required name="harga_barang">
+      </div>
+
+      
+      <div class="mb-3">
+        <label >Jumlah </label>
+        <input type="number" class="form-control"  placeholder="10" required name="jumlah_barang">
+        
+      </div>
+
+      <div class="mb-3 custom-radio">
+          
+          <label for="">Aksesoris :</label><br>
+          <input type="radio" name="pilih"> USB <br>
+          <input type="radio" name="pilih"> Memory <br>
+          <input type="radio" name="pilih"> Speaker <br>
+      </div>
+
+      <div class="mb-1">
+
+          <table class="table table-hover table-primary">
+              <thead>
+                <tr>
+                  <th scope="col">Aksesoris </th>
+                  <th scope="col">Harga</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">USB</td>
+                  <td>50000</td>
+                </tr>
+                <tr>
+                  <td scope="row">Memory</td>
+                  <td>120000</td>
+                </tr>
+                <tr>
+                  <td scope="row">Speaker</td>
+                  <td>40000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+      <hr class="mb-4">
+
+      <div class="mb-3">
+        
+          <a class="btn btn-success" onclick="proses()">Proses</a>
+          <a href="" class="btn btn-danger">Reset</a>
+        
+      </div>
+      <div class="mb-3">
+        <label >Total </label>
+        <input type="text" class="form-control" required readonly name="total_pembelian">
+        
+      </div>
+      
+      <div class="mb-3">
+        <label >Pajak 10%</label>
+        <input type="text" class="form-control" required readonly name="pajak">
+        
+      </div>
+      
+      <div class="mb-3">
+        <label >Total Bayar</label>
+        <input type="text" class="form-control" required readonly name="total_bayar">
+        
+      </div>
+     
+    </form>
+  </div>
+  </div>
+</div>
+
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+  <p class="mb-1">&copy; UAS Rachel
+  </p>
+  
+</footer>
+</div>
+
+
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+    
+      <script src="js/form-validation.js"></script>
+      <script>
+          function proses(){
+          var harga_barang = parseFloat (document.form.harga_barang.value);
+          var jumlah_barang = parseFloat(document.form.jumlah_barang.value);
+          var total = harga_barang*jumlah_barang;
+          
+          var Aksesoris = "";
+          if (form.pilih[0].checked){
+              Aksesoris= 50000;
+          }
+          if(form.pilih[1].checked){
+              Aksesoris=120000;
+          } if(form.pilih[2].checked){
+              Aksesoris=40000;
+          }
+         
+          var totalSemua = total+Aksesoris;
+          document.form.total_pembelian.value="Rp "+totalSemua;
+
+          var pajak = totalSemua*0.1;
+          document.form.pajak.value="Rp "+pajak;
+          
+          var total_bayar = totalSemua+pajak;
+          document.form.total_bayar.value="Rp "+total_bayar;
+        }
+      </script>
+      </script>
+ </body>
+ </html>
