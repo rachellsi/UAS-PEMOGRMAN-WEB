@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>PROGRAM- KREDIT RUMAH</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sticky-footer-navbar/">
+
+    
+
+    <!-- Bootstrap  CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Favicons -->
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">PROGRAM UAS </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link py-3" href="UAS-penjualanBarang.html">Penjualan Barang</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penggajianKaryawan.html">Penggajian Karyawan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-pembelianBarang.html">Pembelian Barang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-pembelianBarangMember.html">Pembelian Barang(MEMBER)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penjualanBarangElektronik.html">Penjualan Barang Elektronik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penjualanMotor.html">Penjualan Motor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-tagihanListrik.html">Tagihan Listrik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-kreditRumah.html">Kredit Rumah</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="text-muted text-center">Program Kredit Rumah</h1>
+            <form name="IForm" id="IForm">
+              
+              <div class="form-group">
+                <label for="" class="col-md-3">Tipe Rumah:</label>
+                <select class="form-control" id="Tipe" name="Tipe" onchange="pilihan ()">
+                    <option>Pilih Tipe Rumah</option>
+                    
+                    <option value="Almanda">Almanda</option>
+                    <option value="Mawar">Mawar</option>
+              </select>
+              </div>
+              <div class="form-group">
+                <label for="" class="col-md-3">Lama Kredit</label>
+                <input type="text" class="form-control"  placeholder="2" required id="LKreditInput">
+              </div>
+
+              <div class="form-group">
+                <a class="btn btn-outline-success " onclick="PROSES()">Proses</a>
+                <a href="" class="btn btn-outline-danger">Reset</a>
+              </div>
+
+              <div class="form-group">
+                <h3 class="text-muted text-center ">Harga Rumah</h3>
+                    <ul class=" text-muted" type="1">
+                        <li>Type Almanda =  120000000</li>
+                        <li>Type Mawar = 130000000</li>
+                        <li><p>Uang Muka Sebesar 20% dari Total Harga Rumah</p></li>
+                    </ul>
+                    <hr>
+                    <table class="align-items-center">
+                        <label for=""><h2>Program Kredit Rumah</label></h2>
+                        <tr>
+                            <td class="text-muted">Type Rumah</td>
+                            <td class="text-muted">=</td>
+                            <td><div id="TRumah"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">Harga Rumah</td>
+                            <td class="text-muted">=</td>
+                            <td class="text-muted">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="HRumah" id="HRumah" value="" disabled>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">Uang Muka</td>
+                            <td class="text-muted">=</td>
+
+                            <td class="text-muted">
+                                <div class="form-group">
+                                <input type="text" class="form-control" name="UMuka" id="UMuka" value="" disabled>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">Sisa</td>
+                            <td class="text-muted">=</td>
+                            <td class="text-muted">
+                                <div class="form-group">
+                                <input type="text" class="form-control" name="Sisa" id="Sisa" value="" disabled>
+                                </div>
+                            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">Lama Kredit</td>
+                            <td class="text-muted">=</td>
+                            <td class="text-muted">
+                                <div class="form-group">
+                                <input type="text" class="form-control" id="LKreditOutput" value="" disabled>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">Angsuran</td>
+                            <td class="text-muted">=</td>
+                            <td class="text-muted">
+                                <div class="form-group">
+                                <input type="text" id="Angsur" class="form-control" name="Angsur" value="" disabled>
+                                </div>
+                            </td>
+                        </tr>
+                        </table>
+                        <div class="table2">
+                            <textarea name="RKredit" rows="15" cols="70" class="text-muted form-control">Rincian Kredit Per-Bulan</textarea>
+                        </div>
+                </div>
+                        
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">UAS-Putri Ajeng Larasmanah.</span>
+  </div>
+</footer>
+
+
+    <script src="js/jquery.slim.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.6/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function pilihan()
+        { 
+          
+          var typerumah=document.getElementById("IForm").Tipe.value;
+          if (typerumah=="Almanda")
+          {
+            document.getElementById("TRumah").innerHTML="ALMANDA";
+            document.IForm.HRumah.value=120000000;
+          } 
+          else if (typerumah=="Mawar")
+          {
+            document.getElementById("TRumah").innerHTML="MAWAR";
+            document.IForm.HRumah.value=130000000;
+          }
+        }
+          function PROSES(){
+            var x;
+            x = document.getElementById("LKreditInput").value;
+            document.getElementById("LKreditOutput").value=x;
+
+            var HRumah = parseFloat(document.IForm.HRumah.value)
+            if (isNaN(HRumah))
+            {
+            HRumah="";
+            }      
+            var hasil_uangmuka = HRumah * 0.2;
+            document.IForm.UMuka.value=+hasil_uangmuka;
+
+            var hasil_sisa = HRumah - hasil_uangmuka;
+            document.IForm.Sisa.value=+hasil_sisa;
+
+            var hasil_angsuran = hasil_sisa / x;
+            document.IForm.Angsur.value=+hasil_angsuran;
+
+            var hasil="";
+            for(i=1;i<=x;i++)
+            {
+            Angsur= (hasil_sisa-hasil_angsuran) ;
+            hasil=hasil+"Angsuran "+i+"  Rp. "+hasil_angsuran+" = Rp. "+Angsur+"\n";
+            }
+            document.IForm.RKredit.value=hasil;
+      }
+    </script>
+      
+  </body>
+</html>

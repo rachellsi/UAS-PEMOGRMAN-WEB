@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>PROGRAM-UAS PEMBELIAN BARANG(MEMBER)</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sticky-footer-navbar/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Favicons -->
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">PROGRAM UAS </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link py-3" href="UAS-penjualanBarang.html">Penjualan Barang</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penggajianKaryawan.html">Penggajian Karyawan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-pembelianBarang.html">Pembelian Barang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-pembelianBarangMember.html">Pembelian Barang(MEMBER)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penjualanBarangElektronik.html">Penjualan Barang Elektronik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penjualanMotor.html">Penjualan Motor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-tagihanListrik.html">Tagihan Listrik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-kreditRumah.html">Kredit Rumah</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="text-muted text-center">Program Pembelian Barang <b class="text-center">(MEMBER)</b></h1>
+            <form name="form">
+              <div class="form-group">
+                <label for="">Nama Barang</label>
+                <select class="form-control" name="NBarang" required>
+                    <option>Pilih Barang</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="CPU">CPU</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Monitor">Monitor</option>
+                </select>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                   <div class="form-group">
+                    <label for="">Jumlah Barang</label>
+                    <input type="number" class="form-control" name="JBarang" placeholder="2...">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                      
+                  <div class="form-group">
+                    <label for="">Member :</label><br>    
+                    <input type="checkbox" class="" name="member"> Ya
+                  </div>
+                </div>
+              </div>
+             
+              <div class="form-group">
+                <a class="btn btn-outline-success " onclick="PROSES()">Proses</a>
+                <a href="" class="btn btn-outline-danger">Reset</a>
+              </div>
+              <div class="form-group">
+                <label for="">Harga Barang</label>
+                <input type="text" class="form-control" name="HBarang"  readonly>
+              </div>
+              <div class="form-group">
+                <label for="">Total</label>
+                <input type="text" class="form-control" name="Total"  readonly>
+              </div>
+              <div class="form-group">
+                <label for="">Diskon 10%</label>
+                <input type="text" class="form-control" name="Diskon"  readonly>
+              </div>
+              
+              <div class="form-group">
+                <label for="">Bayar</label>
+                <input type="text" class="form-control" name="Bayar"  readonly>
+              </div>
+              
+              
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">UAS-Putri Ajeng Larasmanah.</span>
+  </div>
+</footer>
+
+
+    <script src="js/jquery.slim.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.6/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function PROSES(){
+        var NBarang =  (document.form.NBarang.value);
+            
+            var JBarang = parseFloat(document.form.JBarang.value);
+            
+            var HTotal =0.0;
+            var Diskon = 0.0;
+            var Total =0.0;
+
+            if(NBarang == "Keyboard"){
+                HTotal = 1500000;
+            }else if(NBarang == "CPU"){
+                HTotal = 7000000;
+            }else if(NBarang == "Mouse"){
+                HTotal = 3500000;
+            }else if(NBarang == "Monitor"){
+                HTotal = 500000;
+            }
+            sub = JBarang*HTotal;
+            if (document.form.member.checked == true){
+				Diskon = 0.1 * sub;
+			}
+			else{
+				Diskon=0.0;
+			}
+            Total = sub-Diskon;
+            document.form.HBarang.value = "Rp "+eval(HTotal);
+            document.form.Total.value= "Rp "+eval(sub);
+            document.form.Diskon.value= "Rp "+eval(Diskon);
+            document.form.Bayar.value= "Rp "+eval(Total);
+      }
+    </script>
+      
+  </body>
+</html>

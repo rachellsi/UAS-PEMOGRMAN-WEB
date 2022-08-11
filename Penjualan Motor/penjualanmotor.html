@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>PROGRAM- PENJUALAN MOTOR</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sticky-footer-navbar/">
+
+    
+
+    <!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Favicons -->
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">PROGRAM UAS </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link py-3" href="UAS-penjualanBarang.html">Penjualan Barang</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penggajianKaryawan.html">Penggajian Karyawan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-pembelianBarang.html">Pembelian Barang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-pembelianBarangMember.html">Pembelian Barang(MEMBER)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penjualanBarangElektronik.html">Penjualan Barang Elektronik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penjualanMotor.html">Penjualan Motor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-tagihanListrik.html">Tagihan Listrik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-kreditRumah.html">Kredit Rumah</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="text-muted text-center">Program Penjualan Motor</h1>
+            <form name="form">
+              
+              <div class="form-group">
+                <label for="">Merk Motor</label>
+                <select class="form-control" id="MMotor">
+                    <option>Pilih Motor</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Yamaha">Yamaha</option>
+                    <option value="Suzuki">Suzuki</option>
+                  </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="" class="col-md-3">Aksesoris</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="VRacing" value="Velg Racing" />
+                    <label class="form-check-label" for="VRacing">Velg Racing</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="HHelm" value="Helm" />
+                    <label class="form-check-label" for="HHelm">Helm</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="HJaket" value="Jaket" />
+                    <label class="form-check-label" for="HJaket">Jaket</label>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="col-md-3">Cara Pembayaran</label>
+                <div class="form-check form-check-inline">
+                    <div><input class="form-check-input" type="radio" id="PTunai" name="radio" value="Tunai" /><label for="pilihanbayar 1">Tunai</label></div>
+                </div>
+                <div class="form-check form-check-inline">
+                    <div><input class="form-check-input" type="radio" id="PKredit" name="radio" value="Kredit" /><label for="pilihanbayar 2">Kredit</label></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-1 col-md-5">
+        
+                <table class="table table-hover ">
+                    <thead>
+                      <tr>
+                        <th scope="col">Merk Motor </th>
+                        <th scope="col">Harga</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">Honda</td>
+                        <td>15000000</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Yamaha</td>
+                        <td>14000000</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Suzuki</td>
+                        <td>13000000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mb-1 col-md-5">
+        
+                    <table class="table table-hover ">
+                        <thead>
+                          <tr>
+                            <th scope="col">Aksesoris </th>
+                            <th scope="col">Harga</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">Velg</td>
+                            <td>450000</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Helm</td>
+                            <td>250000</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Jaket</td>
+                            <td>300000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+              <div class="form-group">
+                <a class="btn btn-outline-success " onclick="PROSES()">Proses</a>
+                <a href="" class="btn btn-outline-danger">Reset</a>
+              </div>
+              <div class="form-group">
+                <label for="">Harga</label>
+                <input type="text" class="form-control" name="HBarang"  readonly id="HBarang">
+              </div>
+              <div class="form-group">
+                <label for="">Bunga/Diskon</label>
+                <input type="text" class="form-control" name="Diskon"  readonly id="Diskon">
+              </div>
+              <div class="form-group">
+                <label for="">Total Bayar</label>
+                <input type="text" class="form-control" name="Total"  readonly id="Total">
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">UAS-Putri Ajeng Larasmanah.</span>
+  </div>
+</footer>
+
+
+    <script src="js/jquery.slim.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.6/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function PROSES(){
+        let MMotor = document.getElementById("MMotor").value;
+
+        let velg = document.getElementById("VRacing");
+        let HHelm = document.getElementById("HHelm");
+        let HJaket = document.getElementById("HJaket");
+        let PTunai = document.getElementById("PTunai");
+        let PKredit = document.getElementById("PKredit");
+
+        let Total = document.getElementById("Total").value;
+
+        let honda = 15000000;
+        let yamaha = 14000000;
+        let suzuki = 13000000;
+        switch (MMotor) {
+            case "Honda":
+            MMotor = honda;
+            document.getElementById("HBarang").value = MMotor;
+            break;
+            case "Yamaha":
+            MMotor = yamaha;
+            document.getElementById("HBarang").value = MMotor;
+            break;
+            case "Suzuki":
+            MMotor = suzuki;
+            document.getElementById("HBarang").value = MMotor;
+            break;
+
+            default:
+            break;
+        }
+        if (velg.checked) {
+            let hargavelg = 450000 + MMotor;
+
+            document.getElementById("HBarang").value = hargavelg;
+        } else if (HHelm.checked) {
+            let hargahelm = 250000 + MMotor;
+
+            document.getElementById("HBarang").value = hargahelm;
+        } else if (HJaket.checked) {
+            let hargajaket = 300000 + MMotor;
+
+            document.getElementById("HBarang").value = hargajaket;
+        } else {
+        }
+        
+        if (velg.checked && HHelm.checked && HJaket.checked) {
+            let HBarang = MMotor + 450000 + 250000 + 300000;
+
+            document.getElementById("HBarang").value = HBarang;
+        } else if (velg.checked && HHelm.checked) {
+            let HBarang = MMotor + 450000 + 250000;
+
+            document.getElementById("HBarang").value = HBarang;
+        } else if (velg.checked && HJaket.checked) {
+            let HBarang = MMotor + 450000 + 300000;
+
+            document.getElementById("HBarang").value = HBarang;
+        } else if (HHelm.checked && HJaket.checked) {
+            let HBarang = MMotor + 250000 + 300000;
+
+            document.getElementById("HBarang").value = HBarang;
+        }
+
+        if (PTunai.checked) {
+            let Diskon = 0.1 * document.getElementById("HBarang").value;
+
+            Total = document.getElementById("HBarang").value - Diskon;
+            document.getElementById("Total").value = Total;
+
+            document.getElementById("Diskon").value =Diskon;
+        } else if (PKredit.checked) {
+            let hasilharga = parseInt(document.getElementById("HBarang").value);
+            Diskon = 0.15;
+
+            let hitung = hasilharga * Diskon;
+
+            Total = hitung + hasilharga;
+
+            document.getElementById("Total").value = Total;
+
+            document.getElementById("Diskon").value =Diskon;
+        }
+      }
+    </script>
+      
+  </body>
+</html>

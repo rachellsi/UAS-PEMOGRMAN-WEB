@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>PROGRAM- TAGIHAN LISTRIK</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sticky-footer-navbar/">
+
+    
+
+    <!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Favicons -->
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">PROGRAM UAS </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link py-3" href="UAS-penjualanBarang.html">Penjualan Barang</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penggajianKaryawan.html">Penggajian Karyawan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-pembelianBarang.html">Pembelian Barang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-pembelianBarangMember.html">Pembelian Barang(MEMBER)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penjualanBarangElektronik.html">Penjualan Barang Elektronik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-penjualanMotor.html">Penjualan Motor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-tagihanListrik.html">Tagihan Listrik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3" href="UAS-kreditRumah.html">Kredit Rumah</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="text-muted text-center">Program Menghitung Biaya Tagihan Listrik PLN Bandung</h1>
+            <form name="form">
+              
+              <div class="form-group">
+                <label for="">Nama Pelanggan</label>
+                <input type="text" class="form-control" placeholder="Putri Ajeng Larasmanah" required id="NPelanggan">
+              </div>
+              
+              <div class="form-group">
+                <label for="" class="col-md-3">Kategori Rumah:</label>
+                <select class="form-control" id="KRumah">
+                    <option>Pilih Kategori</option>
+                    <option value="Sosial">Sosial</option>
+                    <option value="Rumah">Rumah</option>
+                    <option value="Industri">Industri</option>
+              </select>
+              </div>
+              <div class="form-group">
+                <label for="" class="col-md-3">Jumlah Pemakaian Listrik</label>
+                <input type="text" class="form-control"  placeholder="4" required id="JPemakaian">
+              </div>
+
+              <div class="form-group">
+                <a class="btn btn-outline-success " onclick="PROSES()">Proses</a>
+                <a href="" class="btn btn-outline-danger">Reset</a>
+              </div>
+              <div class="row">
+                 <div class="mb-1 col-md-6">
+                    
+                <table cellpadding="7" class="table table-hover table-success">
+                    <tr>
+                        <td>Jumlah</td>
+                        <td>Tarif per-KWh</td>
+                        <td>ABODEMEN</td>
+                        <td>Sub Total</td>
+                    </tr>
+                    <tr>
+                        <td id="OJumlah"></td>
+                        <td id="OTarif"></td>
+                        <td id="OAbodemen"></td>
+                        <td id="OSubtotal"></td>
+                    </tr>
+                </table>
+                <table cellpadding="5">
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>:</td>
+                        <td id="OTotal"></td>
+                    </tr>
+                    <tr>
+                        <td>Pajak</td>
+                        <td>:</td>
+                        <td id="OPajak"></td>
+                    </tr>
+                    <tr>
+                        <td>Bayar</td>
+                        <td>:</td>
+                        <td id="OBayar"></td>
+                    </tr>
+                </table>
+                </div>   
+                <div class="mb-1 col-md-6">
+        
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Kategori</th>
+                            <th scope="col">ABODEMEN</th>
+                            <th scope="col">Tarif PER-KWH</th>
+                            <th scope="col">Pajak</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">Sosial</td>
+                            <td>10000</td>
+                            <td>300</td>
+                            <td>0%</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Rumah</td>
+                            <td>30000</td>
+                            <td>500</td>
+                            <td>10%</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Industri</td>
+                            <td>50000</td>
+                            <td>1000</td>
+                            <td>30%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div> 
+               
+            </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">UAS-Putri Ajeng Larasmanah.</span>
+  </div>
+</footer>
+
+
+    <script src="js/jquery.slim.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.6/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function PROSES(){
+        var KRumah = document.getElementById("KRumah").value;
+            let JPemakaian = document.getElementById("JPemakaian").value;
+
+            let pajak;
+                switch (KRumah) {
+                case "Sosial":
+                
+                    pajak = 0;
+                    break;
+                    case "Rumah":
+                    pajak = 0.1;
+                    break;
+                    case "Industri":
+                    pajak = 0.3;      
+                    break;
+                }
+            let y=JPemakaian;
+            let TSosial = 0;
+            let TRumah = 0;
+            let TIndustri = 0;
+            let ABODEMEN;
+            let subtotal;
+            
+            let ket = "";
+            let J_Pemakaian = "";
+            let H_Abodemen = "";
+            let H_Subtotal = "";
+            for(let i=1; i <= y; i++){
+                J_Pemakaian +=+ i + "<br>";
+                if(KRumah == "Rumah"){
+                TRumah += 500;
+                ket += TRumah + "<br>";
+
+                ABODEMEN = 30000;
+                subtotal = ABODEMEN+TRumah;
+                
+                H_Abodemen += ABODEMEN+ "<br>";
+                H_Subtotal += subtotal + "<br>";
+            }else if(KRumah == "Sosial"){
+                TSosial += 300;
+                ket += TSosial + "<br>";
+                
+                ABODEMEN = 10000;
+                subtotal = ABODEMEN+TSosial;
+
+                H_Abodemen += ABODEMEN+ "<br>";
+                H_Subtotal += subtotal + "<br>";
+            }else if(KRumah == "Industri"){
+                TIndustri += 1000;
+                ket += TIndustri + "<br>";
+                
+                ABODEMEN = 50000;
+                subtotal = ABODEMEN+TIndustri;
+
+                H_Abodemen += ABODEMEN+ "<br>";
+                H_Subtotal += subtotal + "<br>";
+
+            }
+                // tampilkan
+                document.getElementById("OJumlah").innerHTML= J_Pemakaian;
+                document.getElementById("OTarif").innerHTML= ket;
+                document.getElementById("OAbodemen").innerHTML= H_Abodemen;
+                document.getElementById("OSubtotal").innerHTML= H_Subtotal;
+                if(i==i){
+                document.getElementById("OTotal").innerHTML= subtotal;  
+                let outpajak=pajak*subtotal;
+                document.getElementById("OPajak").innerHTML= outpajak;
+                let bayar = outpajak + subtotal;
+                document.getElementById("OBayar").innerHTML= bayar;
+            }
+            }
+      }
+    </script>
+      
+  </body>
+</html>
